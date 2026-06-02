@@ -1,13 +1,11 @@
-# OWI Slice Dataset
+﻿# OWI Slice Dataset
 
 This repository contains annotated Open Web Index (OWI) web slices used for
 language-identification evaluation in the Resiliparse research project.
 
 ## Status And License
 
-Research dataset release candidate. Redistribution terms for OWI-derived text
-must be confirmed before public release. Until that is resolved, treat this
-repository as research-use material rather than an openly licensed dataset.
+Research dataset release candidate. Reuse is governed by the terms described in `LICENSE.md`, including the Open Web Index Licence (OWIL) context for OWI-derived text. Until redistribution terms are confirmed for public release, treat this repository as research-use material rather than a generic permissive open-data release.
 
 ## Dataset Contents
 
@@ -101,3 +99,4 @@ python -m rsp.cli.owi_preprocessing --slice-dir data/OWI_slice
 ```
 
 Final evaluation inputs are the `enriched.json` files in each slice folder.
+

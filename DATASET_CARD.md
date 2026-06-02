@@ -1,4 +1,4 @@
-# Dataset Card: OWI Slice Dataset
+﻿# Dataset Card: OWI Slice Dataset
 
 ## Purpose
 
@@ -28,5 +28,5 @@ cleaned, Label Studio, and annotation files for reproducibility.
 
 ## License And Release Status
 
-Research dataset release candidate. OWI redistribution terms must be confirmed
-before public release.
+Research dataset release candidate. See `LICENSE.md` for the OWI/Open Web Index licence context and reuse notes. OWI redistribution terms must be confirmed before public release.
+
