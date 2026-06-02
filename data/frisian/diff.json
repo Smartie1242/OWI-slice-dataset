@@ -1,0 +1,22 @@
+[
+  {
+    "id": 47,
+    "annotator1": "English",
+    "annotator2": "Unknown"
+  },
+  {
+    "id": 49,
+    "annotator1": "Dutch",
+    "annotator2": "Frisian"
+  },
+  {
+    "id": 61,
+    "annotator1": null,
+    "annotator2": "Frisian"
+  },
+  {
+    "id": 62,
+    "annotator1": null,
+    "annotator2": "Mixed languages"
+  }
+]
