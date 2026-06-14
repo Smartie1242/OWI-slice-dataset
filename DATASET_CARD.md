@@ -1,32 +1,32 @@
-﻿# Dataset Card: OWI Slice Dataset
+# Dataset Card: OWI Slice Dataset
 
 ## Purpose
 
 Annotated OWI web slices for evaluating language identification on noisy,
-heterogeneous web text with specific attention to Frisian, Dutch, and random web
-content.
+heterogeneous web text, with specific attention to Frisian and Dutch.
 
-## Source
+## Source And Sampling
 
-Open Web Index crawl records retrieved with `owilix` and sampled with a
-deterministic reservoir sampler using seed `42`.
-
-## Splits And Slices
-
-The dataset has three slices: Frisian, Dutch, and random. Each slice contains
-100 sampled pages before correction/enrichment.
+Open Web Index records were retrieved from the 2026-02-03 main public dataset
+with `owilix`. Frisian and Dutch use the `fry` and `nld` language paths; the
+random slice has no language-path restriction. Each slice was sampled to 100
+records with deterministic reservoir sampling using seed 42.
 
 ## Annotation
 
-Marten annotations are present for all slices. Timo annotations are present for
-Frisian and random only. The Dutch slice has no second annotator export.
+The repository uses anonymized annotator filenames. `annotator1` is present for
+all slices; `annotator2` is present for Frisian and random only. Agreement is
+96/100 for Frisian and 98/100 for random. Dutch has no second annotation.
+Disagreements were manually resolved into `corrected.json`.
 
 ## Recommended Evaluation File
 
-Use `data/<slice>/enriched.json` for final evaluation and retain the raw,
-cleaned, Label Studio, and annotation files for reproducibility.
+Use `data/<slice>/enriched.json`. Mixed-language labels are retained for
+provenance but excluded from the single-label detector evaluation used by the
+research project.
 
 ## License And Release Status
 
-Research dataset release candidate. See `LICENSE.md` for the OWI/Open Web Index licence context and reuse notes. OWI redistribution terms must be confirmed before public release.
-
+Research dataset release candidate. See `LICENSE.md` for Open Web Index licence
+context and reuse notes. Redistribution terms must be confirmed before public
+release.
